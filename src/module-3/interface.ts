@@ -39,5 +39,19 @@ const userWithInterface: IUser = {
 
 type addNumbersType = (num1: number, num2: number) => number;
 const addNumbers:addNumbersType = (num1, num2) => num1 + num2;
-
 console.log(addNumbers(10,20));
+
+interface IAddNumbers{
+    (num1: number, num2: number): number;
+}
+
+const addNumbers2:IAddNumbers = (num1, num2) => num1 + num2;
+console.log(addNumbers(20,20));
+
+
+
+type rollType = number[]
+interface IRollNumbers{
+    [index:number]: number;
+}
+const rollNumbers2: IRollNumbers = [1, 4, 2];
