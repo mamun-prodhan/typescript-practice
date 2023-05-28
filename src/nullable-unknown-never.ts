@@ -24,8 +24,26 @@ const getMyCarSpeed = (speed: unknown) => {
         // const convertedSpeed = (value * 1000) / 3600;
         // console.log(`My converted speed is ${convertedSpeed}`)
     }
+    else{
+        console.log("There is wrong type");
+    }
 }
-
 
 getMyCarSpeed(10);
 getMyCarSpeed("10 kmh^-1");
+getMyCarSpeed(true);
+
+
+// never type in typescript
+function throwError(message: string){
+    throw new Error(message);
+}
+
+throwError("404 not found");
+
+
+function throwError2(message: string){
+    throw new Error(message);
+}
+
+throwError2("File not found");
