@@ -10,3 +10,11 @@ else{
 
 const isAdult = age >= 18 ? "Yes, He is Adult" : "No, Not adult";
 console.log(isAdult);
+
+
+// Nullish coalescing operator ??
+//It will set a defalut value depending on null and undefined
+const isAuthenticatedUser = "";
+const userName = isAuthenticatedUser ?? "Guest";
+const userName2 = isAuthenticatedUser ? isAuthenticatedUser : "Guest 2";
+console.log({userName} , {userName2});
