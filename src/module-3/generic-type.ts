@@ -1,8 +1,15 @@
-const rollNumbers10: Array<number> = [44, 55, 20];
-const allNames: Array<string> = ['dipu', 'drupal', 'disha'];
-const isStudent: Array<boolean> = [true, false, true, false];
+type GenericTuple<X, Y> = [X, Y];
+const relation: GenericTuple<string, string> = ['Mamun', 'Rashmika Mandana'];
 
-const userNameAndRollNumbers: Array<{name: string; roll: number}> = [
+type GenericArray<T> = Array<T>;
+
+const rollNumbers10: GenericArray<number> = [44, 55, 20];
+const allNames: GenericArray<string> = ['dipu', 'drupal', 'disha'];
+const isStudent: GenericArray<boolean> = [true, false, true, false];
+
+type NameRollType = {name: string; roll: number};
+
+const userNameAndRollNumbers: GenericArray<NameRollType> = [
     {
         name: 'mamun pro',
         roll: 1,
