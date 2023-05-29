@@ -16,3 +16,10 @@
 // const result2 = createArrayTuple<boolean, Array<string>>(false, ["USA"]);
 
 // const result3 = createArray1<{name: string}>({name: 'Bangladesh'});
+
+
+
+// arrow function
+const createArray = (param: string): string[] =>{
+    return[param];
+}
