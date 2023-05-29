@@ -21,4 +21,4 @@ const myInfo:MyInfoType = {
 };
 
 const result6 = addMetoCrush<MyInfoType>(myInfo);
-console.log(result6);
+console.log(result6.salary);
